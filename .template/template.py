@@ -28,7 +28,8 @@ def test_b_full():
     assert solve_b(data) == 0
 
 
-def load_data(set):
-    lines = open(os.path.dirname(__file__) + f'/{set}.txt').read().splitlines()
+def load_data(set: str):
+    with open(os.path.dirname(__file__) + f'/{set}.txt') as f:
+        lines = f.read().splitlines()
     return lines
 

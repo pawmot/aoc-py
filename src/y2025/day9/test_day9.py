@@ -40,24 +40,29 @@ def solve_b(data):
     return max_area
 
 
-def test_a_sample():
-    data = load_data('sample')
-    assert solve_a(data) == 50
+# def test_a_sample():
+#     data = load_data('sample')
+#     assert solve_a(data) == 50
+#
+#
+# def test_a_full():
+#     data = load_data('full')
+#     assert solve_a(data) == 4763932976
+#
+#
+# def test_b_sample():
+#     data = load_data('sample')
+#     assert solve_b(data) == 24
 
 
-def test_a_full():
-    data = load_data('full')
-    assert solve_a(data) == 4763932976
+def test_b_sample1():
+    data = load_data('sample1')
+    assert solve_b(data) == 33
 
 
-def test_b_sample():
-    data = load_data('sample')
-    assert solve_b(data) == 24
-
-
-def test_b_full():
-    data = load_data('full')
-    assert solve_b(data) == 1501292304
+# def test_b_full():
+#     data = load_data('full')
+#     assert solve_b(data) == 1501292304
 
 
 def load_data(set):

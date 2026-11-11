@@ -5,5 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "parsy>=2.2",
     "pytest>=9.0.1",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ['src']
